@@ -1,24 +1,22 @@
-# portfolio-website
+# Portfolio Website 
 
-## Project setup
+## Installation
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+yarn
 ```
 
-### Compiles and minifies for production
+### For vue 3 development (with hot reloading)
 ```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
+yarn serve
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### To build / minify for production
+```
+yarn build
+```
+
+### Run tests
+```
+yarn test
+```
+
