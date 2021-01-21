@@ -8,9 +8,14 @@
     "test": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-brands-svg-icons": "^5.15.2",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/vue-fontawesome": "^2.0.2",
     "@types/faker": "^5.1.2",
     "core-js": "^3.6.5",
     "faker": "^5.1.0",
+    "lodash": "^4.17.20",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",
     "vuex": "^4.0.0-0"
