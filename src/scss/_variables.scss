@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Quicksand:wght@300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 $small-breakpoint: 600px;
 $medium-breakpoint: 768px;
 $large-breakpoint: 992px;
@@ -20,23 +21,24 @@ $grid-40: 200px;
 
 $box-shadow-standard:  0 1px 6px 0 rgba(34, 35, 38, 0.18);
 
-$color-primary: rgb(65, 77, 110);
-$color-text: #252525;
-$colour-secondary: cadetblue;
-$color-white: #fff;
-$color-meta: gray;
-$color-danger: yellow;
-$color-danger-highlight: yellow;
+$color-primary: #33425b;
+$color-text: #29252c;
+$color-secondary: #d8e9f0;
+$color-highlight: #d72323;
+$color-white: #eeeeee;
 
 $border-width: 1px;
-$border-radius: .25rem;
+$border-radius: 0.5rem;
 
 $font-weight-bold: 600;
+$font-size-s: 12px;
 $font-size-m: 18px;
 $font-size-l: 32px;
 
 $transition: .15s ease-in-out;
 
+$font-sans-sherif: 'Quicksand', sans-serif;
+$font-sans-main: 'Ubuntu', sans-serif;
 
 h3 {
     font-size: x-large;
@@ -45,6 +47,12 @@ h3 {
     user-select: none;
 }
 
+.heading {
+    max-width: $size-app-max-width;
+        text-align: center;
+        letter-spacing: 3px;
+        margin-bottom: 3rem;
+}
 .highlighted-text {
     background-color: antiquewhite;
 }

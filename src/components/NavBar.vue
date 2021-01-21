@@ -1,46 +1,34 @@
 <template>
   <section class="nav-bar">
     <div class="nav-bar-container">
-      <img src="../assets/imgs/LogoWName.png" alt="Logo" />
-      <div class="nav-bar-container__contact">
-        <Contact />
-      </div>
+      MATTY J. PHELAN
     </div>
   </section>
 </template>
 
 <script>
-import Contact from "@/assets/icons/Contact";
 export default {
   name: "Navbar",
-  components: {
-    Contact,
-  },
 };
 </script>
 
 <style lang="scss" scoped>
 .nav-bar {
   width: 100%;
-  margin-top: 2rem;
-  &-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 50px;
+  padding: 1rem;
+  background-color: $color-white;
+  position: fixed;
+  z-index: 99;
+  box-shadow: 0px 8px 22px -10px rgba(0,0,0,0.6);
 
-    &__contact {
-        height: 3rem;
-        width: 3rem;
-        background-color: $color-primary;
-        border-radius: 8px;
-        box-shadow: 4px 4px 16px -8px rgba(0,0,0,0.75);
-        display: flex;
-        justify-content: center;
-      & svg {
-        height: 100%;
-      }
-    }
+  &-container {
+    font-family: $font-sans-sherif;
+    font-size: $font-size-m;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    text-align: center;
   }
 }
 </style>

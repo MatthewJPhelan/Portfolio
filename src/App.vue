@@ -1,49 +1,39 @@
 <template>
   <div class="app">
     <NavBar />
-    <HeaderText />
-    <Brands />
-    <SectionTitle title="Previous Work" />
-    <SplitSection
-      title="title"
-      tagLine="tagline"
-      description="this is the description"
-      imageLocation="../assets/imgs/MotivLogo.png"
-    >
-      <!-- <template v-slot:split-section-image>
-        <img class="split-section-card__image" src=".\assets\imgs\MotivLogo.png" alt="" />
-      </template> -->
-    </SplitSection>
-    <SplitSection
-      title="title"
-      tagLine="tagline"
-      description="this is the description"
-      imageLocation="src/imgs/MotivLogo.png"
-    >
-      <!-- <template v-slot:split-section-image>
-        <img class="split-section-card__image" src=".\assets\imgs\ConveneLogo.png" alt="" />
-      </template> -->
-    </SplitSection>
+    <Menu />
+    <Header />
+    <About />
+    <WorkExperience />
+    <SkillsKanban />
+    <Projects />
+    <ExtraCurricular />
     <Footer />
   </div>
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";
 import NavBar from "@/components/NavBar.vue";
-import HeaderText from "@/components/HeaderText.vue";
-import Brands from "@/components/Brands.vue";
-import SectionTitle from "@/components/SectionTitle.vue";
-import SplitSection from "@/components/SplitSection.vue";
+import Menu from "@/components/Menu.vue"
+import Header from "@/components/Header.vue"
+import About from '@/components/About.vue';
+import SkillsKanban from '@/components/SkillsKanban.vue';
+import WorkExperience from '@/components/WorkExperience.vue';
+import Projects from '@/components/Projects.vue';
+import ExtraCurricular from '@/components/ExtraCurricular.vue'; 
 import Footer from "@/components/Footer.vue";
 
 export default defineComponent({
   name: "App",
   components: {
     NavBar,
-    HeaderText,
-    Brands,
-    SectionTitle,
-    SplitSection,
+    Menu,
+    Header,
+    About,
+    SkillsKanban,
+    WorkExperience,
+    Projects,
+    ExtraCurricular,
     Footer,
   },
 });
@@ -53,18 +43,19 @@ export default defineComponent({
 .app {
   display: flex;
   flex-direction: column;
-  margin: 3rem 2rem 0 2rem;
-  max-width: $size-app-max-width;
+  color: $color-text;
+  // margin: 3rem 2rem 0 2rem;
+  // max-width: $size-app-max-width;
 
-  @media screen and (min-width: $medium-breakpoint) {
-    margin: 3rem 3rem 0 3rem;
-  }
-  @media screen and (min-width: $large-breakpoint) {
-    margin: 3rem 3rem 0 4rem;
-  }
-  @media screen and (min-width: $x-large-breakpoint) {
-    margin: 3rem auto;
-  }
+  // @media screen and (min-width: $medium-breakpoint) {
+  //   margin: 3rem 3rem 0 3rem;
+  // }
+  // @media screen and (min-width: $large-breakpoint) {
+  //   margin: 3rem 3rem 0 4rem;
+  // }
+  // @media screen and (min-width: $x-large-breakpoint) {
+  //   margin: 3rem auto;
+  // }
   // &__content {
   //   max-width: $size-app-max-width;
   //   margin: auto;

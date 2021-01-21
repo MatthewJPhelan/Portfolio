@@ -1,16 +1,29 @@
 <template>
-  <section class="footer">
-    <FooterScribble class="footer-scribble" />
-    this is the footer
+  <section class="footer" id="contact">
+    <div class="footer-headshot"></div>
+    <div class="footer-thanks">Thank you for visiting my website!</div>
+    <div class="footer-text">
+      If you wish to get in contact with me, LinkedIn or Email are best.
+      <p>
+        OR
+        <a href="../assets/CV-2021.pdf" download>here</a
+        >
+        is my cv
+      </p>
+    </div>
+    <Socials />
+    <div class="footer-copyright">
+      &copy; Matty J. Phelan {{ new Date().getFullYear() }}
+    </div>
   </section>
 </template>
 
 <script>
-import FooterScribble from "@/assets/imgs/FooterScribble.vue";
+import Socials from "./Socials.vue";
 export default {
   name: "Footer",
   components: {
-    FooterScribble,
+    Socials,
   },
 };
 </script>
@@ -18,20 +31,29 @@ export default {
 <style lang="scss" scoped>
 .footer {
   width: 100%;
-  position: absolute;
-  left: 0;
-  bottom: -200vh;
-  background-color: $color-primary;
+  background-color: $color-white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  font-family: $font-sans-sherif;
+  font-size: x-large;
 
-  &-scribble {
-    position: relative;
-    top: -5px;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  &-headshot {
+    margin: 3rem;
+    height: 20rem;
+    width: 20rem;
+    background-image: url(../assets/imgs/HeadShot.png);
+    background-position: center;
+    background-size: cover;
+  }
+
+  &-text {
+    text-align: center;
+  }
+
+  &-copyright {
+    font-size: small;
+    padding-bottom: 1rem;
   }
 }
 </style>
